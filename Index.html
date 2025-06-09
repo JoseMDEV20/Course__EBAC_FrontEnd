@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <form id="formValidacao">
+        <h1>FORMULÁRIO DE VALIDAÇÃO</h1>
+
+        <p>Preencha os números abaixo e clique em "Validar" para verificar se o segundo número é maior que o primeiro.</p>
+        <p>Se o segundo número for maior, uma mensagem positiva será exibida. Caso contrário, uma mensagem negativa será mostrada.</p>
+        <p>Além disso, se algum campo estiver vazio, uma mensagem de erro será exibida.</p>
+
+        <label for="numero1">Primeiro Número</label>
+        <input type="number" id="numero1" name="numero1">
+        <span id="errorNumero1" style="color: red; font-size: 14px;"></span>
+
+        <label for="numero2">Segundo Número</label>
+        <input type="number" id="numero2" name="numero2">
+        <span id="errorNumero2" style="color: red; font-size: 14px;"></span>
+
+        <button type="submit" id="submit">Validar</button>
+
+        <div id="mensagem" style="font-size: 18px; margin-top: 10px;"></div>
+    </form>
+
+    <script src="./Main.js"></script>
+</body>
+</html>
